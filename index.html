@@ -367,30 +367,35 @@ Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit"
 				<h2>Select an Existing Local Repository</h2>
 				<p>We can add an existing local repository using <a href="https://confluence.atlassian.com/get-started-with-sourcetree/add-an-existing-local-repository-847359105.html" target="_blank">Sourcetree</a>.</p>
 				<p>The local repo will appear in your Sourcetree browser.</p>
-				<p>When prompted, you can also create the remote repository on Github!</p>
+				<!-- <p>When prompted, you can also create the remote repository on Github!</p> -->
+				<img src="images/localrepo.png" alt="Add Existing Local Repo">
 			</section>
 			<!-- 2. making a change in your code and staging the file you changed and making the commit -->
 			<section>
-				<h2>Updating the Remote Repository</h2>
-				<p>We can update the remote repository by:</p>
-				<ul>
+				<h2>Updating the Local Repository</h2>
+				<p>We can update the local repository by:</p>
+				<ol>
 					<li>Making changes in our code locally</li>
 					<li>Staging the files we changed</li>
 					<li>Committing the changes</li>
-				</ul>
+				</ol>
 				<p>A commit message is needed before pushing the changes.</p>
 				<aside class="notes">Next slide has commit message samples.</aside>
 			</section>
 			<!-- 3. how to write industry standard commit messages -->
 			<section>
-				<h2>Commit Message to a Remote Repository</h2>
-				<p>While committing changes to a remote repository, use industry standard language and conventions for messages.</p>
+				<h2>Commit Message Best Practices</h2>
+				<p>While committing changes to a repository, use industry standard language and conventions for messages.</p>
 				<ul>Commit message <b>subject</b>:
 					<li>"initial commit" - great for the first files in a remote repo</li>
-					<li>"fixes [issue#]" - great for open source Github projects</li>
-					<li>"updates [ticket#]" - great for dev shop tickets</li>
+					<li>"fixes [issue#]" - great for open source Github projects or dev shop tickets</li>
+					<li>"Updates to navigation bar for accessibilty and responsive design" - Clear description of the code changes</li>
 				</ul>
-				<p>Commit message <i>contents</i> are optional. <br>To furnish, short and simple is best.</p>
+			</section>
+
+			<section>
+				<h2>Commit Message Best Practices</h2>
+				<p>Everyone, including clients!, can read commit messages. They should be clear, descriptive, and professional.</p>
 			</section>
 
 			<section>
@@ -512,6 +517,23 @@ Lauras-MacBook-Pro:newProject laurahackney$ git pull origin master
 						href="https://docs.google.com/document/d/1yjFLrNBHdfBkWrTfWkpFpzAEfWhfEbIprQy9X3W1JHc/edit?usp=sharing"
 						target="_blank">here</a> to review.</p>
 			</section> -->
+			<section>
+				<h2>Gitflow & Truck-based Development</h2>
+				<p>Read <a href="https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development">here</a></p>
+			</section>
+
+			<section>
+				<h2>What is a Merge?</h2>
+				<p>When working on a dev branch, you can merge the code back into the main branch.</p>
+				<img src="/images/branchmerge.png" alt="Branch and Merge in Sourcetree">
+			</section>
+
+			<section>
+				<h2>What is a Pull Request?</h2>
+				<p>If you don't have access to a public project (meaning you are not an authorized collarborator), you are not allowed to create a branch and merge it into the project.</p>
+				<p>You can submit code for review to be accepted to the project. This is great for open source projects and great for your resume!</p>
+				<p>Read more <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">here</a></p>
+			</section>
 
 			<section>
 				<h2>Git and Github Overview</h2>
