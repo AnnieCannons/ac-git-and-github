@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>AnnieCannons slides</title>
+	<title>AnnieCannons Git & Github slides</title>
 
 	<meta name="description" content="AnnieCannons class slides">
 	<meta name="author" content="AnnieCannons">
@@ -16,6 +16,7 @@
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/classcolors.css">
 
 	<!-- Printing and PDF exports -->
 	<script>
@@ -32,733 +33,72 @@
 		<div class="slides">
 
 			<section>
-				<h2>Learning the Terminal/Command Line and Git</h2>
+				<h2>Introduction to Git and Github</h2>
 			</section>
 
 			<section>
-				<h2>Learning the Terminal/Command Line and Git Review Study Guide</h2>
-				<p>Click <a
-						href="https://docs.google.com/document/d/1yjFLrNBHdfBkWrTfWkpFpzAEfWhfEbIprQy9X3W1JHc/edit?usp=sharing"
-						target="_blank">here</a> to review.</p>
-			</section>
-
-			<section>
-				<h2>What we are going to learn</h2>
-				<p class="fragment">Deep-dive into how our computers are structured.</p>
-				<p class="fragment">How to navigate the file system more effectively.</p>
-				<p class="fragment">aka: program like a hacker!</p>
-				<img class="fragment" width="600px" src="images/terminal.gif" alt="Terminal Useage">
-			</section>
-
-			<section>
-				<h2>Why do i need to know this?</h2>
-				<p>These skills are critical for:</p>
+				<h2>Git and Github Overview</h2>
 				<ul>
-					<li class="fragment">Learning new tools</li>
-					<li class="fragment">Collaborating with teams</li>
-					<li class="fragment">Working with new JavaScript frameworks</li>
-					<li class="fragment">Securing your code</li>
+					<li>Version Control and Git</li>
+					<li>Github</li>
 				</ul>
-			</section>
-
-			<section>
-				<h2>What is a Shell?</h2>
-				<p class="fragment">A text-based command interpreter</p>
-				<p class="fragment">The most common shell (and default on OS X) is BASH</p>
-				<p class="fragment">For OS X, use a shell via the “Terminal” app</p> 
-			 </section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<p>The terminal is an interface in which you can type and execute text based commands.</p>
-				<p class="fragment">This is how we access our Command Line Interface (CLI).</p>
-			  </section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<img src="images/terminal.png" alt="Terminal Image">
-			</section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<p>The terminal is the original interface computers, before the invention of the GUI</p>	
-				<p>All commands, folder & directory creation, as well as application installations were all done in the terminal.</p>		
-			</section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<p>Here is how you would create new folders</p>
-				
-					<img data-enlargable 
-						height="300" 
-						style="border: 5px solid blue; cursor: zoom-in;" 
-						src="images/create-folder-termina.png" alt="Screenshot of creating folders in the terminal">
-			</section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<p>Here are the new folders shown in the GUI</p>				
-					<img data-enlargable 
-					height="300" 
-					style="border: 5px solid blue; cursor: zoom-in; height: 150px" src="images/new-folders-created-in-terminal-shown-in-gui.png" alt="Image showing same folders in the GUI">	
-			</section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<p>Let's watch a live example!</p>
-			</section>
-
-			<section>
-				<h2>Where to find the Terminal?</h2>
-				<ul>
-					<li>Finder</li>
-					<li>Applications</li>
-					<li>Utilities</li>
-				</ul>
-				<p>Click and drag the icon into your dock.</p>
-				<p>Then double click the icon on the dock to open.</p>
-			</section>
-
-			<section>
-				<h2>Why Use the Terminal?</h2>
-				<ul>
-					<li class="fragment">Automate file actions with a script</li>
-					<li class="fragment">Serve a local directory for testing</li>
-					<li class="fragment">Use version control (like Git)</li>
-					<li class="fragment">Run open source projects</li>
-					<li class="fragment">Use automated build tools</li>
-					<li class="fragment">Control other computers</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>The Prompt</h2>
-				<p>Usually shows your username and computer name (hostname).</p>
-				<p>It indicates that the shell is ready for you to enter a command.</p>
-				<img src="images/prompt.png" alt="Terminal Prompt">
-			</section>
-
-			<section>
-				<h2>The Current Directory</h2>
-				<p><code contenteditable>pwd</code> (Print Working Directory)</p>
-				<p>Type it whenever you want to see what directory (folder) you’re in.</p>
-				<p>TRY It!</p>
-			</section>
-
-			<section>
-				<h2>Directories</h2>
-				<p>Containers for files or other directories.</p>
-				<p>Also referred to as "folders".</p>
-				<p>Nested files and directories can be referenced using paths.</p>
-				<p>Who remembers the difference between absolute and relative paths?</p>
-			</section>
-			
-			<section>
-				<h2>Directories</h2>
-				<p>Let's see our local directories in our browser!</p>
-				<p class="fragment">Type <span style="color:turquoise">/Users/</span> into your browser's URL</p>
-				<p class="fragment">Now type your user name (what you see when you log on to your computer in the morning) after <span style="color:turquoise">/Users/</span>. Do not add any spaces </p>
-				<p class="fragment">How can you open an image or other file you have on your local machine?</p>
-			</section>
-
-			<section>
-				<h2>Server OS</h2>
-				<img src="images/unixtree.png" alt="History of Servers">
-				<p>Explain this relative path:<pre><code class="js" data-trim contenteditable>/unix/BSD/freeBSD</code></pre></p>
-				
-			</section>
-
-			<section>
-				<h2>UNIX File System</h2>
-				<p>You don't need to be an expert on the UNIX system, but it is helpful to have a deeper understanding
-					of how your computer is configured.</p>
-				<p>It will also help you get out of trouble in your Terminal!</p>
-			</section>
-
-			<section>
-				<h2>UNIX File System</h2>
-				<img data-enlargable height="300" style="border: 5px solid blue; cursor: zoom-in;"
-					src="images/unix-file-system-mac.png" alt="Unix File System" style="height: 35vh">
-				<p>Take a few minutes and write the relative path starting at 'carol' and ending at 'Library'</p>
-			</section>
-
-			<section>
-				<h2>File System Structure</h2>
-				<p>Varies between systems, but some common folders:</p>
-				<ul>
-					<li class="fragment">/bin: Basic commands</li>
-					<li class="fragment">/etc: System config files</li>
-					<li class="fragment">/tmp: Temporary files</li>
-					<li class="fragment">/usr: Regular user tools</li>
-					<li class="fragment">/usr/local: Installed user software</li>
-					<li class="fragment">/var: Data used by system</li>
-					<li class="fragment">Let's check out some live examples!</li>
-				</ul>
-			</section>
-
-			<!--UNIX File System contributions by author is @patti_ordonez begin here -->
-			<section>
-				<h2>Unix Filesystem</h2>
-				<p>In Unix, files are contained in directories which are organized in an “upside
-					down tree” structure like the one shown below. The topmost directory is named “root” and represented
-					by the single character ‘/’ known as the “front slash”.</p>
-				<img data-enlargable height="300" style="border: 5px solid blue; cursor: zoom-in;"
-					src="images/systemPic.png" style="height: 35vh" />
-			</section>
-
-			<section>
-				<h2>Unix Filesystem</h2>
-				<p>Let's watch <a href="https://www.youtube.com/watch?v=PEmi550E7zw" target="_blank">this</a> video</p>
-			</section>
-
-			<section>
-				<h2>Understanding the Terminal</h2>
-				<p>Let's watch the first 10 minutes of <a href="https://www.youtube.com/watch?v=FfT8OfMpARM"
-						target="_blank">this</a> video</p>
-			</section>
-
-			<section>
-				<h2>The command for changing directories</h2>
-				<code>cd</code>
-				<p><code>cd</code> means "change directory."</p>
-				<p>Without a command line argument (CLA*), <code>cd</code> switches to your home directory
-					(computername:~ username) no matter where you are in the file system.</p>
-				<p>*A CLA is the list of words that proceed the command.
-				</p>
-
-			</section>
-
-			<section>
-				<h2>Changing Directories</h2>
-				<ul>
-					<li><code>cd <span style="color:yellow;">&lt;relative path&gt;</span></code></li>
-					<li><code>cd <span style="color:yellow;">&lt;absolute path&gt;</span></code></li>
-					<li><code>cd <span style="color:yellow;">&lt;symbolic path&gt;</span></code></li>
-				</ul>
-				<ul>
-					<li class="fragment" style="list-style-type: none;"> -> <code>cd ../exampleDir</code></li>
-					<li class="fragment" style="list-style-type: none;"> -> <code>cd /exampleDir</code></li>
-					<li class="fragment" style="list-style-type: none;"> -> <code>cd ~/exampleDir</code></li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Practice I</h2>
-				<img src="images/systemPic.png" style="height: 40vh" />
-				<div style="font-size: .5em">
-					<table>
-						<tr>
-							<td width="20%">current working directory</td>
-							<td width="20%">cd command using absolute path</td>
-							<td width="20%">cd command using relative path</td>
-							<td width="20%">new working directory</td>
-						</tr>
-						<tr>
-							<td>/home/bob</td>
-							<td class="fragment"><code style="font-size:1em">cd /home/bob/class</code></td>
-							<td class="fragment"><code style="font-size:1em">cd ./class</code></td>
-							<td>/home/bob/class</td>
-						</tr>
-					</table>
-					<aside class="notes"> The answers fill in as you click right.</aside>
-				</div>
-
-			</section>
-			<section>
-				<h2>Practice II</h2>
-				<img src="images/systemPic.png" style="height: 40vh" />
-				<div style="font-size: .5em">
-					<table>
-						<tr>
-							<td width="20%">current working directory</td>
-							<td width="20%">cd command using absolute path</td>
-							<td width="20%">cd command using relative path</td>
-							<td width="20%">new working directory</td>
-						</tr>
-						<tr>
-							<td>/home/bob</td>
-							<td class="fragment"><code style="font-size:1em">cd /home/mary/temp</code></td>
-							<td class="fragment"><code style="font-size:1em">cd ../mary/temp</code></td>
-							<td>/home/mary/temp</td>
-						</tr>
-					</table>
-				</div>
-
-			</section>
-			<!-- <section>
-				<h2>UNIX File System Exercises</h2>
-				<img src="images/systemPic.png" style="height: 40vh" />
-				<div style="font-size: .5em">
-				 <p>Fun worksheet on how to change directories <a href="https://docs.google.com/a/anniecannons.com/document/d/1qhXuCr2DIypECpMxAB6ZjgYPB3Wv05fKrkXxXMr9K1k/edit?usp=sharing">here.</a></p> 
-				</div>
-				
-			</section> -->
-			<!-- end section of UNIX File System -->
-
-			<section>
-				<h2>Understanding Paths</h2>
-				<ul>
-					<li>Current Directory: (.)</li>
-					<li>Parent Directory: (..)</li>
-					<li>Home Directory: (~)</li>
-					<li>Root Directory: (/)</li>
-					<li>Let's check out some live examples!</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Common Commands in Terminal</h2>
-				<table>
-					<tr class="fragment">
-						<th>Tool</th>
-						<th>Action</th>
-					</tr>
-					<tr class="fragment">
-						<td><code>ls</code></td>
-						<td>List what is in the current directory.</td>
-					</tr>
-					<tr class="fragment">
-						<td><code>cd</code></td>
-						<td>Change directory.</td>
-					</tr>
-					<tr class="fragment">
-						<td><code>mkdir</code></td>
-						<td>Make a new directory.</td>
-					</tr>
-					<tr class="fragment">
-						<td><code>touch</code></td>
-						<td>Create or update an existing file's timestamp. The touch command expects the name of your
-							new file as an argument.</td>
-					</tr>
-					<tr class="fragment">
-						<td><code>mv</code></td>
-						<td>Move a file from one place to another. See <a
-								href="https://support.apple.com/guide/terminal/move-and-copy-files-apddfb31307-3e90-432f-8aa7-7cbc05db27f7/mac"
-								target="_blank">Docs</a>.</td>
-					</tr>
-					<tr class="fragment">
-						<td><code>rm</code></td>
-						<td>Delete a file.</td>
-					</tr>
-					<tr class="fragment">
-						<td><code>rmdir</code></td>
-						<td>Delete a directory.</td>
-					</tr>
-				</table>
-			</section>
-				
-			<section>
-				<h2>Common Commands in Terminal</h2>
-				<p>Bookmark <a href="https://www.makeuseof.com/tag/mac-terminal-commands-cheat-sheet/" target="_blank">this </a> cheatsheet!</p>
-			</section>
-
-			<section>
-				<h2>Flags</h2>
-				<p>Some commands have additional options that allow flags.</p>
-				<p>Flags are preceded by a hyphen, and are often a single character.</p>
-				<img src="images/ls.png" alt="">
-				<p><code>ls -a</code> = show hidden files</p>
-				<p><code>ls -l</code> = use a “long list” format (shows more verbose output)</p>
-			</section>
-
-			<section>
-				<h2>Terminal Commands</h2>
-				<ul>
-					<li class="fragment">The left/right arrow keys let you edit within a command
-					<li class="fragment">The up/down arrow keys let you select previous commands
-					<li class="fragment">CTRL+a goes to beginning of command, CTRL+e to the end.
-					<li class="fragment">The tab auto-completes file names! Best friend!
-				</ul>
-			</section>
-
-			<section>
-				<h2>Making and Removing Directories</h2>
-				<p>Use the <code style="color: aqua;">mkdir</code> command to create a new empty directory.</p>
-				<p>Use the <code style="color: aqua;">rmdir</code> command to remove an empty directory.</p>
-				<p>Use <code style="color: aqua;">rm -r</code> to remove a non-empty directory...be careful!</p>
-				<p>All 3 commands expect the name of a directory as an argument.</p>
-				<p>Let's check this out in both terminal and the finder open next to each other!</p>
-			</section>
-
-			<section>
-				<h2>Command Line Project</h2>
-				<p>Use Terminal to make the folder system called:<br>terminal-practice</p>
-				<ul>
-					<li>Create the root folder in your Documents folder</li>
-					<li>Make sure to add folders for your CSS and JS</li>
-					<li>Add a new index.html file</li>
-				</ul>
-				<img src="images/exercise.gif" alt="Exercise time" />
-				<a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript"
-					target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
-			</section>
-
-			<section>
-				<h2>Command Line to Open Visual Studio Code</h2>
-				<p>Try this! Type this into Terminal:</p>
-				<pre><code class="js" data-trim contenteditable>open -a "Visual Studio Code"</code></pre>
-				<p class="fragment">Now look over <a href="https://code.visualstudio.com/docs/setup/mac"
-						target="_blank">this documentation</a> to install a shell command in Visual Studio Code.</p>
-				<p class="fragment">Quit out of Visual Studio Code.</p>
-				<p class="fragment">Then in Terminal, type "code" and press return. What happens?</p>
-			</section>
-
-			<!-- <section>
-				<h2>View a File</h2>
-				<p><code>cat</code>, <code>more</code>, <code>less</code></p>
-				<p>Use the <code>cat</code> command to output (concatenate) the contents of a file to the console.</p>
-				<p>Use the more or less commands to read a file:</p>
-					<ul>
-						<li><code>more</code> allows you to step through the contents of a file a screen at a time</li>
-						<li><code>less</code> allows you to step backwards or forwards</li>
-						<li>Press q to exit out of this mode</li>
-					</ul>
-			</section>
-
-			<section>
-				<h2>Try this!</h2>
-				<p><code>cat /var/log/wifi.log</code></p>
-			</section>
-
-			<section>
-				<h2>Edit a File</h2>
-				<p>You can use various editors built into bash:</p>
-				
-<pre><code>
-$ vi myfile.txt
-</code></pre>
-<pre><code>
-$ emacs myfile.txt
-</code></pre>
-<pre><code>
-$ pico myfile.txt
-</code></pre>
-				
-				<p>Or on a Mac, you can open with any desktop app:</p>
-<pre><code>
-$ open -a TextEdit myfile.txt
-</code></pre>
-				<p>Or with the default editor:</p>
-<pre><code>
-$ open -t myfile.txt	
-</code></pre>
-			</section>
-
-			<section>
-				<h2>Fun tools</h2>
-				<ul>
-					<li><code>ping</code></li>
-					<li><code>traceroute</code></li>
-					<li><code>ps -A</code></li>
-					<li><code>users</code></li>
-				</ul>
-			</section> -->
-
-			<!-- <section>
-				<h2>Review</h2>
-				<p>What is the command line?</p>
-			</section>
-			 Begin Section of File Permissions by @ladycode 
-			<section>
-				<h2>File Permissions</h2>
-				<ul>
-					<li>In Unix, files and directories are protected from inadvertent or malicious misuse by assigning
-						“permissions”. The available permissions are:</li>
-						<ul>
-							<li>read</li>
-							<li>write</li>
-							<li>execute</li>
-						</ul>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Where can I see permissions?</h2>
-				<p>The command <code>ls -l</code> followed by a filename</p> 
-				<pre><code>$ ls -l filename.txt</code></pre>
-				<p>or a path to a file and its filename</p>
-				 <pre><code>$ ls -l /usr/bin/uniq</code></pre>
-				<p>display the permissions for a file.</p>
-			</section>
-
-			<section>
-				<h2>File Status</h2>
-				<p>When the status of the file or directory is displayed, the permissions are represented by the letters ‘r’, ‘w’ and ‘x’ representing read, write and execute permission, respectively. 
-			</section>
-
-			<section>
-				<h2>File Status</h2>
-					<p>A dash, ‘-‘, is used to indicate that a permission has not been granted. The user’s permissions are always listed first, then group and then other.</p>
-<pre><code contenteditable>$ ls -l message.txt</code></pre>
-<pre><code contenteditable>rwxr-x-w-	message.txt   ...</code></pre>
-				<aside class="notes">Make sure to explain what the permissions for user, group and other and explain what each of these reprsent.</aside>
-
-			</section>
-
-			<section>
-				<h2>Permissions</h2>
-				<ul>
-					<li class="fragment"><span style="color:yellow;">User permissions</span> − Determines what actions the owner of the file can perform on the file.</li>
-					<li class="fragment"><span style="color:yellow;">Group permissions</span> − Determines what actions a user, who is a member of the group that a file belongs to, can perform on the file.</li>
-					<li class="fragment"><span style="color:yellow;">Other (world) permissions</span> − Indicate what action all other users can perform on the file.</li>
-				</ul>
-				<a class="fragment" href="https://www.tutorialspoint.com/unix/unix-file-permission.htm">Learn more here</a>
-			</section>
-
-			<section>
-				<h2>Fun with Permissions </h2>
-				<p>Go <a href="https://docs.google.com/a/anniecannons.com/document/d/12192q90oaIC6g6IvEurbOW7CWB88Wk4j88Qe78MhBWQ/edit?usp=sharing">here</a> and do the exercise on permissions.</P>
-			</section>
-			<section>
-				<h2>Permission values</h2>
-				<p>Setting the permissions of a file or directory can be accomplished with <code>chmod</code> which uses numbers to represent the permissions.
-				<ul> 
-					<li>4 = read permission</li>
-					<li>2 = write permission </li>
-					<li>1 = execute permission</li> 
-					<li>0 = no permissions</li>
-				</ul>
-
-				<aside class="notes">Take the students back to the exercise and see if they can derive by looking at the octal numbers they wrote in the previous exercise why the values exist for the corresponding premissions.</aside>
-			</section>
-
-			<section>
-				<h2>Setting permissions</h2>
-				<p>The values of the desired permissions are added together and one digit is used for each of user, group and others. The octal number created is first command line argument to <code>chmod</code> and the filename is the second.</p> 
-<pre><code>$ chmod 765 prog.exe</code></pre>
-				<p class="fragment">What are the permissions for the previous command?</p>
-			</section>
-
-			<section>
-				<h2>More fun with Permissions</h2>
-				<p>What are the appropriate <code>chmod</code> commands for the following?</p>
-				<ul style="font-size:0.75em">
-					<li class="fragment">Set read, write and execute permissions for the user, group and others for a directory named <code>temp</code>.
-					</li>
-					<li class="fragment">Set read and execute permissions for the user, execute permission for the group and no permissions for others for a file named <code>students.txt</code>.</li>
-					<li class="fragment">Set the read and execute permissions for the user and group and read permission for others
-					for a file named <code>grades.txt</code>.
-					</li>
-					<li class="fragment">Set execute permission for user, group and others for a directory named <code>mailbox</code>.</li>
-					<li class="fragment">Set only write permission for the user on a file named <code>assignments.txt</code>.</li>
-				</ul>
-				<aside class="notes">chmod 777 temp, chmod 510 students.txt, chmod 554 grades.txt, chmod 111 mailbox, chmod 200 assignments.txt.</aside>
-			</section>
-			<section>
-				<h2>So what do permissions mean?</h2>
-				<p>The previous permissions were not meaningful and were mostly to teach a concept. Permissions for files and directories mean different things</p>
-				<table>
-					<tr>
-						<th></th><th>Files</th><th>Directories</th>
-					</tr>
-					<tr>
-						<th>Read</th><td><i>view</i></td><td><i>list</i></td></i>
-					</tr>
-					<tr>
-						<th>Write</th><td><i>edit</i></td><td><i>modify</i></td>
-					</tr>
-					<tr>
-						<th>Execute</th><td><i>run</i></td><td><i><code>cd</code> into</i></td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<h2>Even More Fun with Permissions</h2>
-				<p>Now let's try more permissions and determine which are meaningful <a href="https://docs.google.com/a/anniecannons.com/document/d/16UQvSkX31XNxFg19RnacamU6bRWUVFHJMnvWXYNWmIQ/edit?usp=sharing">here</a>.</p>
-			</section>
-
-			<section>
-				<h2>Resources</h2>
-				<ul>
-					<li><a href="https://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586">How to Customize the Command Prompt</a></li>
-					<li><a href="https://learncodethehardway.org/unix/">Learn Bash</a></li>
-				</ul>
-			</section>
-			End section of File Permissions
-			Begin Section on Piping by @ladycode
-
-			 RETURN TO
-			<section>
-				<h2>Back to Commands</h2>
-				<p>You have already learned several commands. Some have switches which cause the command to behave differently.</p>
-<pre><code contenteditable>$ ls -l ~</code></pre>
-<pre><code contenteditable>$ ls -lr ~</code></pre>
-<pre><code contenteditable>$ ls -lt ~</code></pre>
-<pre><code contenteditable>$ ls -ld ~</code></pre>
-					
-			</section>
-			<section>
-				<h2>Globbing</h2>
-
-				<p> We can also use wildcards through a process known as Globbing to apply commands to several files at one time.</p><p> The following command lists all files in the current directory that begin with 'file' and are followed by 0 or more characters.</p>
-<pre><code contenteditable>$ ls -l D*</code></pre>
-<p>The following call lists all files that begin with 'Document' and are followed by 0 or 1 character.</p>
-<pre><code contenteditable>$ ls -l Document?</code></pre>
-			</section>
-			<section> 
-				<h2>Command Line Arguments</h2>
-				<p>Others have command line arguments (CLA) and depending CLA behave differently. CLA are the words that follow the command and serve as arguments to the program of the command.</p>
-<pre><code contenteditable>$ mv fileName directoryName </code></pre>
-<pre><code contenteditable>$ mv fileName1 fileName2</code></pre>
-
-			</section>
-			<section>
-				<h2>Filter Commands</h2>
-				<p>Filter commands are a special type of command that take output from other commands as input such as 
-					<code>grep</code>, <code>wc</code>, and <code>sort</code>.
-				</p>
-				<p>Try the following commands to see if you can figure out that they do.</p>
-<pre><code contenteditable="">$ grep Do ~</code></pre>
-<pre><code contenteditable="">$ wc /etc/passwd</code></pre>
-<pre><code contenteditabke>$ sort /etc/passwd</code></pre>
-			</section>
-			<section>
-				<h2>Manual Pages</h2>
-				<p>You can always use the command <code>man</code> to remind you of
-					<ul>
-						<li class="fragment">what a command does,</li>
-						<li class="fragment">what its switches do,</li>
-						<li class="fragment">and what the CLAs do.</li>
-					</ul>  </p>
-<pre><code contenteditable>$ man grep</code></pre>
-			</section>
-			<section>
-					<h2>Filter Commands</h2>
-					<p>Filter commands are a special type of command that take output from other commands as input such as 
-						<code>grep</code>, <code>wc</code>, and <code>sort</code>.
-					</p>
-					<p>Use <code>man</code> and try the following commands to see if you can figure out that they do.</p>
-	<pre><code contenteditable>$ grep -i Do ~</code></pre>
-	<pre><code contenteditable>$ wc -l /etc/passwd</code></pre>
-
-			</section>
-			<section>
-				<h2>Filter Commands in Action (Piping)</h2>
-				<p>Filter commands allow you to find out interesting information about files and directories by combining commands using the pipe <span style="color:red;"> | </span> to send the output of one command as the input of the other command. </p>
-				<aside class="notes">The example tells you how many files you have in your home directory.</aside>
-<pre><code contenteditable>$ ls | wc -l</code></pre>
-<pre><code contenteditable>$ sort -r /etc/passwd | more</code></pre>
-			</section>
-			<section>
-				<h2>Piping Exercises</h2>
-				<p>Let's have some fun with pipes and filters <a href="https://docs.google.com/a/anniecannons.com/document/d/1KZNn3o0NNYqDOu7e1gztrXwzLK7BJBFq29W2lSwWXt4/edit?usp=sharing">here</a>.</p>
-			</section>
-		-->
-			<!-- End of section on piping -->
-			<!--Begin section on working remotely with ssh and scp by @ladycode -->
-
-			<!-- Create a new curriculum module: advanced command line and ssh -->
-
-			<!--
-			<section>
-				<h2>Working Remotely</h2>
-				<p>Thus far, you have been working locally.  All the information you have gathered has been on your machine. What if you need to get information about another machine.
-				 It's time to enter the world of hacking and learn how you can log into your machine from another machine.</p> 
-				 <p>For this part, you will need to work with a partner.</p>
-			</section>
-
-			<section>
-				<h2>Frontend vs. Backend for User</h2>
-				<img width="70%" src="images/comicalfrontandbackend.jpeg" />
-			</section>
-
-			<section>
-				<h2>Frontend vs. Backend for Developer</h2>
-				<img src="images/backandfrontend.jpeg" />
-			</section>
-
-			<section>
-				<h2>Client Server Model</h2>
-				<img src="images/client-server.png" />	
-			</section>
-
-			<section>
-				<h2>Starting Your File and Secure Servers</h2>
-				<p>To better understand the Client Server model, you and your partner will set up two servers on one of your machines. You must be on the same Wifi network and follow the instructions <a href="http://bfy.tw/F59s" target="_blank">here</a> for setting up a server.  </p><p>Check off the File Sharing and the Remote Login to turn on the file and ssh server processes on the selected server machine.</p> <p>Write down the URL in the top of the dialog window that ends in *.local</p>
-			</section>
-
-			<section>
-				<h2>Connecting to a Remote Machine</h2>
-				<p><code>ssh</code> stands for Secure Shell. <code>ssh</code> is the secure way to connect to your partner's machine.  Depending on the user permissions, <code>ssh</code> will allow you to attempt to run all of the commands we have learned remotely. Type the following command to connect replacing the variables with your username and server URL respectively.</p>
-<pre><code>$ ssh &lt;username&gt;@&lt;urlOfRemoteServer&gt;</code></pre>
-				<aside class="notes">Tell the students that it will prompt them to enter a password and if it is the first time they are loging in, it will tell them that it doesn't recognize the machine in a very cryptic way and ask if it should connect anyway. Reply yes since they trust the connection.</aside>
-			</section>
-			<section>
-				<h2>SSH on the Remote Machine</h2>
-				<p>Once you have logged on to the remote server, do the following:</p>
-				<ul>
-					<li>Find out how many files are in their home directory</li>
-					<li>Change into the Documents directory</li>
-					<li>Count the number of files in the Documents directory</li>
-					<li>Type exit to disconnect</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Send a file into the remote directory</h2>
-				<p>The command for copying a file to a remote server is called Secure Copy.  It will prompt you for your password and works as indicated below. Send a file to your partner's Documents directory and then use <code>ssh</code> to see the permissions of the file. </p>
-<pre><code>$ scp localfile &lt;username&gt;@&lt;urlOfRemoteServer&gt;</code></pre>
-<pre><code>$ scp &lt;username&gt;@&lt;urlOfRemoteServer&gt;:directory/remotefile .</code></pre>
-			</section>
-			 I hope you guys enjoyed my contributions!  Best, @ladycode -->
-
-			<section>
-				<h2>Introduction to Version Control and GIT</h2>
 			</section>
 
 			<section>
 				<h2>Version Control System</h2>
 				<p>What is it?</p>
-				<ul>
-					<li class="fragment">A system that keeps records of your changes.</li>
+				<ul class="fragment">A system that:
+					<li class="fragment">Keeps records of your changes.</li>
 					<li class="fragment">Allows for collaborative development.</li>
 					<li class="fragment">Allows you to know who made what changes and when.</li>
 					<li class="fragment">Allows you to revert any changes and go back to a previous state.</li>
-					<li class="fragment">Let's see version control in action in an AnnieCannons Google Doc!</li>
-					<li class="fragment">Check <a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank">this </a> video and article out!</li>
+					<!-- <li class="fragment">Check <a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank">this </a> video and article out!</li> -->
 				</ul>
+				<p class="fragment">Let's see version control in action in a Google Doc!</p>
+				<aside class="notes">Show people the version control in a Google Doc; comment that we will learn how to do it with code.</aside>
 			</section>
 
+			<!-- KEEP! needs to be moved 
 			<section>
 				<h2>Version Control on dev projects</h2>
 				<img src="images/dev-branch-version-control.png" alt="visual of version control">
-			</section>
+			</section> -->
 
 
 			<section>
-				<h2>Example Flow</h2>
-				<p>Alice creates this code and commits it as version 0:</p>
+				<h2>Collaborating in Code</h2>
+				<p>Alex creates this code and commits it as version 0:</p>
 				<pre><code class="js" data-trim contenteditable>
 function addTwo(num){
-	return num + 2;
+  return num + 2;
 }
 </code></pre>
-				<p class="fragment">Alice edits and commits as version 1:</p>
+				<p class="fragment">Alex edits and commits as version 1:</p>
 				<pre class="fragment"><code class="js" data-trim contenteditable>
 function addThree(num){
-	return num + 3;
+  return num + 3;
 }
 </code></pre>
 			</section>
 
 			<section>
-				<h2>Example flow 2</h2>
-				<p>Bob pulls the code from version 0 and edits:</p>
+				<h2>Collaborating in Code 2</h2>
+				<p>Billie pulls the code from version 0 and edits:</p>
 				<pre><code class="js" data-trim contenteditable>
 function addTwo(num){
-	if (num === Infinity){
-		alert("Cannot add to infinity!");
-	}
-	return num + 2;
+  if (num === Infinity){
+    alert("Cannot add to infinity!");
+  }
+  return num + 2;
 }
 </code></pre>
-				<p class="fragment">Bob pulls Alice's changes and it merges them:</p>
+				<p class="fragment">Billie pulls Alex's changes and the system merges them:</p>
 				<pre class="fragment"><code class="js" data-trim contenteditable>
 function addThree(num){
-	if (num === Infinity){
-		alert("Cannot add to infinity!");
-	}
-	return num + 3;
+  if (num === Infinity){
+    alert("Cannot add to infinity!");
+  }
+  return num + 3;
 }
 </code></pre>
 			</section>
@@ -769,11 +109,11 @@ function addThree(num){
 				<p class="fragment"><span style="color: yellow">Centralized version control systems </span>are based on
 					the idea that there is a single "central" copy of your project somewhere (probably on a server), and
 					programmers will "commit" their changes to this central copy.</p>
-				<p class="fragment">In <span style="color: yellow">distributed systems</span>, every developer "clones"
-					a copy of a repository and has the full history of the project on their own hard drive.</p>
+				<p class="fragment">In <span style="color: yellow">distributed systems</span>, every developer "clones" a copy of a repository and has the full history of the project on their own hard drive.</p>
+				<aside class="notes">Github is a distributed systems. Analogy-- a lot of big companies have centralized access, which allows a piece of the code, not whole project history.</aside>
 			</section>
 
-			<section>
+			<!-- <section>
 				<h2>Version Control</h2>
 				<p>Imagine a senior developer at AnnieCannons asks you, for the first time, to add a new 'donate' button to a project</p>
 				<ul>
@@ -782,7 +122,7 @@ function addThree(num){
 					<li class="fragment">With version control software, you no longer have to worry you might crash an entire app or website, making a coding a more enjoyable experience</li>
 					<li class="fragment">Simply download the code from Github, and push your changes to the appropriate branch. The senior dev can see which lines of code you wrote, and merge it with the main project!</li>
 				</ul>
-			</section>
+			</section> -->
 
 			<section>
 				<h2>Centralized vs distributed systems</h2>
@@ -794,15 +134,16 @@ function addThree(num){
 				<h2>What is Git?</h2>
 				<p class="fragment">Git is a popular version control system!</p>
 				<p class="fragment">Other systems exist. However, Git is considered by many to be the best.</p>
-				<p class="fragment">Git allows groups of people to work on the same documents (often code) at the same
-					time, and without stepping on each other's toes.</p>
+				<p class="fragment">Git allows groups of people to work on the same documents (often code) at the same time, and without stepping on each other's toes.</p>
+				<aside class="notes">version control system allows for collaboration, history, versions of code, etc. It's a system.</aside>
 			</section>
 
 			<section>
 				<h2>Goals of Git Design</h2>
 				<ul>
-					<li class="fragment">Fast--add to your team and code base quickly</li>
-					<li class="fragment">Each commit has a corresponding hash (it tracks the changes from everyone)</li>
+					<!-- <li class="fragment">Fast--add to your team and code base quickly</li> -->
+					<li class="fragment">Collaborate effectively</li>
+					<li class="fragment">Each new update to the code has a corresponding hash (it tracks the changes from everyone)</li>
 					<li class="fragment">Everyone has a local copy of the history of the source code</li>
 				</ul>
 			</section>
@@ -812,7 +153,9 @@ function addThree(num){
 				<img src="images/git-logo.png" alt="git logo">
 				<p>Reference this
 					<a href="https://docs.google.com/document/d/1KEmo0oMhdzYX0uZAusU1kf1Sd83LfsmbxykS0n56NPw/edit?usp=sharing"
-						target="_blank">Git Setup Guide</a>.</p>
+						target="_blank">Git Setup Guide</a>.
+				</p>
+				<aside class="notes">Use the Download .pkg option for Mac.</aside>
 			</section>
 
 			<section>
@@ -874,7 +217,7 @@ function addThree(num){
 				<ul>
 					<li class="fragment">All commits in Git live on a branch</li>
 					<li class="fragment">But there can be many many branches</li>
-					<li class="fragment">The main branch in a project is called the <span style="color:yellow">master
+					<li class="fragment">The production branch in a project is called the <span style="color:yellow">main
 						</span> branch.</li>
 				</ul>
 			</section>
@@ -883,26 +226,26 @@ function addThree(num){
 				<h2>Getting Started</h2>
 				<p class="fragment">You can create repositories that are version controlled on your own computer. These
 					are called local repositories.</p>
-				<p class="fragment">The cool thing about distributed systems is that this repo acts the same way as if
-					it were a remote repo.</p>
+				<!-- <p class="fragment">The cool thing about distributed systems is that this repo acts the same way as if
+					it were a remote repo.</p> -->
 			</section>
 
 			<section>
 				<h2>Creating a local repository</h2>
 				<p class="fragment">When creating a new project on your local machine using Git, you will first create a
 					new repository.</p>
-				<p class="fragment">To use Git, we will use Terminal.</p>
-				<p class="fragment">To begin, open Terminal, and move to where you want to place your project on your
+				<p class="fragment">To use Git, we will use Sourcetree.<br>Sourcetree is a GUI for Git.</p>
+				<!-- <p class="fragment">To begin, open Sourcetree, and move to where you want to place your project on your
 					local machine using the <code style="color: aqua;">cd</code> (change directory) command. </p>
 				<pre class="fragment"><code class="js" data-trim contenteditable>
 Lauras-MacBook-Pro:~ laurahackney$ cd Documents
 Lauras-MacBook-Pro:~ laurahackney$ cd dev
 Lauras-MacBook-Pro:~ laurahackney$ mkdir newProject
 Lauras-MacBook-Pro:~ laurahackney$ cd newProject
-</code></pre>
+</code></pre> -->
 			</section>
 
-			<section>
+			<!-- <section> 
 				<h2>Creating a local repository</h2>
 				<p>To initialize a Git repository in the root of the folder, run the <code
 						style="color: aqua;">git init</code> command.</p>
@@ -984,7 +327,7 @@ Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit"
 				<p>Then read this article on <a href="https://women2.com/2016/02/09/20160209git-101-for-beginners/" target="_blank">Git
 						101</a>.</p>
 				<img src="images/exercise.gif" alt="Exercise Time" />
-				<a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript"
+				<a href="https://trello.com/b/RQrD5Ye2"
 					target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
 			</section>
 
@@ -997,7 +340,7 @@ Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit"
 				<h2>Using Awesome GUI Tools</h2>
 				<p>Check out <a href="https://www.sourcetreeapp.com/" target="_blank">Sourcetree</a></p>
 				<p></p>
-			</section>
+			</section>-->
 
 			<section>
 				<h2>Git GUI Tool Setup</h2>
@@ -1005,9 +348,54 @@ Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit"
 			</section>
 
 			<section>
+				<h2>Git and Github Overview</h2>
+				<ul>
+					<li class="green">Version Control and Git</li>
+					<li>Github</li>
+				</ul>
+			</section>
+
+			<!-- <section>
+				<h2>Create a Remote Repository</h2>
+				<p>We will create a remote repository for an existing project on our computer using: <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo" target="_blank">Github</a> or <a href="https://confluence.atlassian.com/sourcetreekb/create-a-new-repository-with-sourcetree-780870052.html" target="_blank">Sourcetree</a>.</p>
+				<p>Then we can select and add a listing of our local repository to the remote repo.</p>
+			</section> -->
+
+			<!-- Use Sourcetree to go through the following steps: -->
+			<!-- 1. selecting and adding a listing of the local repo -->
+			<section>
+				<h2>Select an Existing Local Repository</h2>
+				<p>We can add an existing local repository using <a href="https://confluence.atlassian.com/get-started-with-sourcetree/add-an-existing-local-repository-847359105.html" target="_blank">Sourcetree</a>.</p>
+				<p>The local repo will appear in your Sourcetree browser.</p>
+				<p>When prompted, you can also create the remote repository on Github!</p>
+			</section>
+			<!-- 2. making a change in your code and staging the file you changed and making the commit -->
+			<section>
+				<h2>Updating the Remote Repository</h2>
+				<p>We can update the remote repository by:</p>
+				<ul>
+					<li>Making changes in our code locally</li>
+					<li>Staging the files we changed</li>
+					<li>Committing the changes</li>
+				</ul>
+				<p>A commit message is needed before pushing the changes.</p>
+				<aside class="notes">Next slide has commit message samples.</aside>
+			</section>
+			<!-- 3. how to write industry standard commit messages -->
+			<section>
+				<h2>Commit Message to a Remote Repository</h2>
+				<p>While committing changes to a remote repository, use industry standard language and conventions for messages.</p>
+				<ul>Commit message <b>subject</b>:
+					<li>"initial commit" - great for the first files in a remote repo</li>
+					<li>"fixes [issue#]" - great for open source Github projects</li>
+					<li>"updates [ticket#]" - great for dev shop tickets</li>
+				</ul>
+				<p>Commit message <i>contents</i> are optional. <br>To furnish, short and simple is best.</p>
+			</section>
+
+			<section>
 				<h2>Local vs Remote</h2>
-				<p>You want to be able to collaborate on your code and not just keep the commit on your local computer.
-					And you want to be able to pull someone else's code.</p>
+				<p>You want to be able to collaborate on your code and not just keep the commit on your local computer. And you want to be able to pull someone else's code.</p>
 				<img src="images/sharing.gif" alt="Pokemon Sharing">
 			</section>
 
@@ -1029,11 +417,9 @@ Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit"
 						remote repository is called <span style="color:yellow">pulling</span> changes.</li>
 					<li class="fragment">The process of adding your local changes to the remote repository is called
 						<span style="color:yellow">pushing</span> changes.</li>
-					<p class="fragment"><iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU"
-							frameborder="0" allowfullscreen></iframe> </p>
 				</ul>
+				<a class="fragment" href="https://www.youtube.com/watch?v=vCadcBR95oU" target="_blank"><img width="500" src="images/push-it.jpg" alt="Salt-N-Pepa - Push It"></a>
 			</section>
-
 
 			<section>
 				<h2>Github!</h2>
@@ -1051,12 +437,20 @@ Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit"
 				</ul>
 			</section>
 
+
+			<!-- update these slides with Sourcetree -->
 			<section>
 				<h2>Using Remote Repos</h2>
-				<p class="fragment">To synchronize with a remote repository, tell Git about it.</p>
+				<p>Sourcetree is your best Git friend to push, pull, commit, etc. Double click on a local repo listing for options to:</p>
+				<ul>
+					<li>Pull - checks remote code to update local repo</li>
+					<li>Commit - preps updates from local to remote repo</li>
+					<li>Push - pushes changes from local to remote repo</li>
+				</ul>
+				<!-- <p class="fragment">To synchronize with a remote repository, tell Git about it.</p>
 				<pre class="fragment"><code class="js" data-trim contenteditable>
 Lauras-MacBook-Pro:newProject laurahackney$ git remote add origin git://github.com/username/repo
-</code></pre>
+</code></pre> 
 				<p class="fragment">To push changes, use <code style="color: aqua;">git push</code></p>
 				<pre class="fragment"><code class="js" data-trim contenteditable>
 Lauras-MacBook-Pro:newProject laurahackney$ git push origin master
@@ -1065,7 +459,7 @@ Lauras-MacBook-Pro:newProject laurahackney$ git push origin master
 				<pre class="fragment"><code class="js" data-trim contenteditable>
 Lauras-MacBook-Pro:newProject laurahackney$ git pull origin master
 </code></pre>
-				<p class="fragment">More often, we will use <span style="color:turquoise">Sourcetree</span>  to push, pull, commit, etc</p>
+				<p class="fragment">More often, we will use <span style="color:turquoise">Sourcetree</span>  to push, pull, commit, etc</p>-->
 			</section>
 
 			<section>
@@ -1079,13 +473,13 @@ Lauras-MacBook-Pro:newProject laurahackney$ git pull origin master
 				<p>Search Github for a repo to fork.</p>
 				<img src="images/exercise.gif" alt="Exercise Time" />
 				<br>
-				<a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript"
+				<a href="https://trello.com/b/RQrD5Ye2"
 					target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
 			</section>
 
 			<section>
 				<h2>Review</h2>
-				<p><a href="https://medium.freecodecamp.org/a-developers-introduction-to-github-1034fa55c0db">More tools
+				<p><a href="https://medium.freecodecamp.org/a-developers-introduction-to-github-1034fa55c0db" target="_blank">More tools
 						to learn Github</a></p>
 				<p>Check out AnnieCannons' repo <a href="https://github.com/anniecannons" target="_blank">here</a>! </p>		
 			</section>
@@ -1107,16 +501,24 @@ Lauras-MacBook-Pro:newProject laurahackney$ git pull origin master
 					</div>
 					<div style="float: left; width: 15%;">
 						<img src="images/exercise.gif" alt="Exercise Time" />
-						<a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript"
+						<a href="https://trello.com/b/RQrD5Ye2"
 							target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a>
 					</div>
 			</section>
 
-			<section>
+			<!-- <section>
 				<h2>Learning the Terminal/Command Line and Git Roundup</h2>
 				<p>Click <a
 						href="https://docs.google.com/document/d/1yjFLrNBHdfBkWrTfWkpFpzAEfWhfEbIprQy9X3W1JHc/edit?usp=sharing"
 						target="_blank">here</a> to review.</p>
+			</section> -->
+
+			<section>
+				<h2>Git and Github Overview</h2>
+				<ul>
+					<li class="green">Version Control and Git</li>
+					<li class="green">Github</li>
+				</ul>
 			</section>
 
 			<!-- Last Slide -->
